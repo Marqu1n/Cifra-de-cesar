@@ -8,17 +8,17 @@ O propósito do código é codificar uma mensagem utilizando a <a href = 'https:
 <h2>Explicação das palavras reservadas</h2>
 <h3><a href=https://docs.python.org/pt-br/3.10/tutorial/controlflow.html#defining-functions>Funções</a></h3>
 
-def Função(<i>parametro<i>)
+def Função(<i>parametro<i>)<br>
     Defini uma função, que é basicamente um bloco de código que pode ser chamado em qualquer linha de código. A função pode receber quantos parametros o programador quiser, os quais, tem como função de uma variavel local, ou seja, ela só existe dentro da função.
-    Ex.:
-    x=1
-    y=1
-    #As variáveis acima são variáveis globais, ou seja, podem ser acessadas durante todo o código
-    def soma():
-        x=2
-        y=2
-        #As variáveis acima são variáveis locais
-        print("A soma de x e y é:", x+y)
-    print("a multiplicação de x e y é:",x*y )
-    soma()
+    Ex.:<br>
+    x=1<br>
+    y=1<br>
+    #As variáveis acima são variáveis globais, ou seja, podem ser acessadas durante todo o código<br>
+    def soma():<br>
+        x=2<br>
+        y=2<br>
+        #As variáveis acima são variáveis locais<br>
+        print("A soma de x e y é:", x+y)<br>
+    print("a multiplicação de x e y é:",x*y )<br>
+    soma()<br>
  
