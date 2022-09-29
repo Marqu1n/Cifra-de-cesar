@@ -3,7 +3,7 @@
 
 ##Explicação Geral
 
-O propósito do código é codificar uma mensagem utilizando a <a href = 'https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar'>Cifra de César</a>.<br> O código funciona alterando letra por ela pelo valor de shift.
+O propósito do código é codificar uma mensagem utilizando a [Cifra de César](https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar).<br> O código funciona alterando letra por ela pelo valor de shift.
 
 ##Explicação das palavras reservadas
 
