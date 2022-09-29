@@ -10,15 +10,4 @@ O propósito do código é codificar uma mensagem utilizando a <a href = 'https:
 
 def Função(<i>parametro<i>)<br>
     Defini uma função, que é basicamente um bloco de código que pode ser chamado em qualquer linha de código. A função pode receber quantos parametros o programador quiser, os quais, tem como função de uma variavel local, ou seja, ela só existe dentro da função.
-    Ex.:<br>
-    x=1<br>
-    y=1<br>
-    #As variáveis acima são variáveis globais, ou seja, podem ser acessadas durante todo o código<br>
-    def soma():<br>
-        x=2<br>
-        y=2<br>
-        #As variáveis acima são variáveis locais<br>
-        print("A soma de x e y é:", x+y)<br>
-    print("a multiplicação de x e y é:",x*y )<br>
-    soma()<br>
- 
+    Ex.:![image](https://user-images.githubusercontent.com/71527091/193106191-0eee45b0-c430-489f-bf4d-292495d7dd36.png)
