@@ -91,7 +91,7 @@ def allinone():
             brute_force(text)
 
         else:
-            raise ValueError("\nValor inválido!\nRode o código novamente")
+            print("Valor inválido!\n Tente novamente!")
 
 
 allinone()
