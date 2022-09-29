@@ -10,6 +10,9 @@ A decodificação por força bruta mostra todas as possibilidades possíveis, po
 
 ## Explicação das [Funções](https://docs.python.org/pt-br/3.10/tutorial/controlflow.html#defining-functions)
 As funções são blocos de códigos que são definidos pela palavra reservada "def", o nome da função e os parâmetros, com os parâmetros sendo opcionais. Ademais, o motivo das funções existirem é bem simples, sempre que for necessário usar várias linhas de código para executar uma tarefa é usado uma função. Ela funciona como uma variável para linhas de código, sendo que é possivel armazenar diversas linhas de código dentro delas, simplificando o seu código.
+
 As funções existentes no código são: encrypt(msg,num), decrypt(msg,num), brute force(msg) e allinone().
+
 As primeiras 3 são descritas acima, tendo como proposito codificar, decodificar com a chave e decodificar por força bruta.
+
 A função "allinone()" é basicamente o esqueleto do código, pois ela verifica se o usuário quer codificar, decodificar com chave ou decodificar por força bruta. Além disso, a função alerta se o usuário tiver digitado sua escolha errada e coleta a mensagem do usuário e a chave, caso seja necessário.
