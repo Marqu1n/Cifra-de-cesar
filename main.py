@@ -67,6 +67,7 @@ def decrypt(msg, num):
 
 # função de decodificação por força bruta
 def brute_force(msg):
+    #Dicionário messages
     messages = {}
     j = 0
     # enquanto j for menor que o alphabet
@@ -87,7 +88,9 @@ def brute_force(msg):
                 encrypted_msg += i
         j += 1
         # escrever no terminal as possibilidades como dicionário
-    print(f"Essas são todas as possibilidades:{messages}")
+    print(f"Essas são todas as possibilidades:")
+    for key,value in messages.items():
+        print(f"Chave {key}: {value}.")
 
 
 # função allinone()
@@ -101,23 +104,23 @@ def allinone():
         if direction == "codificar":
             correct_direction = True  # <-coloca a direção como certa
             # pede o texto e o número de vezes que o usuário deseja mover cada letra
-            text = input("Type your message:\n").lower()
-            shift = int(input("Type the shift number:\n"))
+            text = input("Digite sua mensagem:\n").lower()
+            shift = int(input("Digite a chave:\n"))
             encrypt(text, shift)
 
         # caso a direção for decodificar com chave
         elif direction == "decodificar":
             correct_direction = True  # <-coloca a direção como certa
             # pede o texto e o número de vezes que o usuário deseja mover cada letra
-            text = input("Type your message:\n").lower()
-            shift = int(input("Type the shift number:\n"))
+            text = input("Digite sua mensagem:\n").lower()
+            shift = int(input("Digite a chave:\n"))
             decrypt(text, shift)
 
         # caso a direção for decodificar por força bruta
         elif direction == "força bruta":
             correct_direction = True  # <-coloca a direção como certa
             # pede o texto que o usuário quer decriptografar
-            text = input("Type your message:\n").lower()
+            text = input("Digite sua mensagem:\n").lower()
             brute_force(text)
 
         else:
