@@ -16,6 +16,6 @@ As primeiras 2 são descritas acima, tendo como proposito codificar e decodifica
 
 A função "main()" é basicamente o esqueleto do código, pois ela verifica se o usuário quer codificar ou decodificar com chave. Além disso, a função alerta se o usuário tiver digitado sua escolha errada e coleta a mensagem do usuário e a chave, caso seja necessário.
 
-##Documentação do Python
+## Documentação do Python
 
-###[Documentação](https://docs.python.org/pt-br/3.10/tutorial)
+### [Documentação](https://docs.python.org/pt-br/3.10/tutorial)
