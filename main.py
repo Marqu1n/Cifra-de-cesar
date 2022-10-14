@@ -30,7 +30,7 @@ alphabet = [
 # função de codificação
 def encrypt(msg, num):
     encrypted_msg = ""
-    # para cada caracter na mensagem
+    # percorre a mensagem toda caracter para caracter
     for i in msg:
         # se o caracter estiver no alphabet
         if i in alphabet:
@@ -72,7 +72,7 @@ def main():
     # Enquanto a direção for errada
     while not correct_direction:
         # pedir para o usuário escrever a direção
-        direction = input("Escolha entre codificar ou decodificar:\n")
+        direction = input("Escolha entre 'codificar' ou 'decodificar':\n").lower()
         # caso a direção for codificar
         if direction == "codificar":
             correct_direction = True  # <-coloca a direção como certa
@@ -92,6 +92,5 @@ def main():
         else:
             # Imprime no terminal a mensagem de valor inválido
             print("Valor inválido!\n Tente novamente!")
-
 
 main()
