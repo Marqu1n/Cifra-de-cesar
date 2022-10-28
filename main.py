@@ -40,7 +40,7 @@ def encrypt(msg, num):
             encrypted_msg += alphabet[new_index]
         # se o caracter não estiver no alphabet
         else:
-            # adicionar à mensagem encriptada(preservar espaços)
+            # adicionar à mensagem encriptada
             encrypted_msg += i
         # escrever no terminal a mensagem criptografada
     print(f"Essa é a mensagem codificada: {encrypted_msg}")
@@ -70,21 +70,22 @@ def decrypt(msg, num):
 def main():
     correct_direction = False
     # Enquanto a direção for errada
+    # enquanto não falso -> enquanto verdadeiro
     while not correct_direction:
         # pedir para o usuário escrever a direção
         direction = input("Escolha entre 'codificar' ou 'decodificar':\n").lower()
         # caso a direção for codificar
         if direction == "codificar":
-            correct_direction = True  # <-coloca a direção como certa
-            # pede o texto e o número de vezes que o usuário deseja mover cada letra
+            correct_direction = True  # <-inverte o valor para cancelar o loop
+            # pede o texto que o usuário deseja mover cada letra
             text = input("Digite sua mensagem:\n").lower()
             shift = 13
             encrypt(text, shift)
 
         # caso a direção for decodificar com chave
         elif direction == "decodificar":
-            correct_direction = True  # <-coloca a direção como certa
-            # pede o texto e o número de vezes que o usuário deseja mover cada letra
+            correct_direction = True  # <-inverte o valor para cancelar o loop
+            # pede o texto que o usuário deseja mover cada letra
             text = input("Digite sua mensagem:\n").lower()
             shift = 13
             decrypt(text, shift)
